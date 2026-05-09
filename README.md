@@ -83,6 +83,7 @@ python my_yolov11.py
 
 We use the pretrained SAM model to generate instance-level masks for each 2D tracking box from previous step. 
 [SAM with ViT-H](https://pan.baidu.com/s/13m_R_lYVWGHoGNYHEzAeHw?pwd=uvnh)
+
 Then per-point instance id is generated for radar point clouds base on 2D-3D projection.
 
 ```bash
@@ -95,8 +96,8 @@ python yolo11_deepsort_segany.py
 
 ## 2. Training
 ```bash
-# You need to change the **PATH** in ./conf/fusion_config.yaml
-# Maybe also the GPU settings
+# You need to change the **PATH** in ./conf/config.yaml
+# Also check the GPU settings
 
 cd ..
 python train.py
@@ -105,7 +106,7 @@ Please check `/checkpoint` file for our trained model.
 
 ## 3. Evaluation
 ```bash
-# You need to change the **PATH** in ./conf/fusion_eval.yaml
+# You need to change the **PATH** in ./conf/eval.yaml
 
 cd ..
 python eval.py
