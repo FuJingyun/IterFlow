@@ -12,7 +12,7 @@ check [detail installation](https://github.com/KTH-RPL/OpenSceneFlow/assets/READ
 conda env create -f environment.yaml
 ```
 
-CUDA package (need install nvcc compiler):
+CUDA package (need to install nvcc compiler):
 ```bash
 # CUDA already install in python environment.
 cd assets/cuda/chamfer3D && python ./setup.py install && cd ../../..
@@ -20,7 +20,7 @@ cd assets/cuda/chamfer3D && python ./setup.py install && cd ../../..
 
 ## 1. Data Preparation
 ### A. Download The View-of-Delft dataset [(VoD)](https://github.com/tudelft-iv/view-of-delft-dataset)
-The dataset is organized as follows:
+The VoD dataset is organized as follows:
 ```
 PATH_TO_VOD_DATASET
     ├── image_2
