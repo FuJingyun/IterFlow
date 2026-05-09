@@ -82,7 +82,7 @@ python my_yolov11.py
 ### D. Generate 2D Segmentation Masks with SAM Model and Project to 3D Space
 
 We use the pretrained SAM model to generate instance-level masks for each 2D tracking box from previous step. 
-[SAM with ViT-H](https://pan.baidu.com/s/13m_R_lYVWGHoGNYHEzAeHw?pwd=uvnh)
+[SAM with ViT-H](https://pan.baidu.com/s/1Rfa5u9GmFRUGqTYCFepW1g?pwd=bqzuh)
 
 Then per-point instance id is generated for radar point clouds base on 2D-3D projection.
 
