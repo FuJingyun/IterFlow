@@ -116,6 +116,7 @@ python eval.py
 
 ## Cite & Acknowledgements
 ❤️: [OpenSceneFlow](https://github.com/KTH-RPL/OpenSceneFlow)
+❤️: [CMFlow](https://github.com/Toytiny/CMFlow) 
 ❤️: [PV-RAFT](https://github.com/weiyithu/PV-RAFT) 
 ❤️: [YOLOv11-DeepSort](https://github.com/Sharpiless/YOLOv11-DeepSort/tree/main)
 ❤️: [segment-anything](https://github.com/facebookresearch/segment-anything) 
