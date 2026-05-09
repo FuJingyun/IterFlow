@@ -1,0 +1,33 @@
+name: RaLiFlow
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.8.13
+  - pytorch::pytorch=1.10.0
+  - pytorch::torchvision
+  - pytorch::pytorch-cuda=11.3
+  - lightning==1.9.0
+  - nvidia::cudatoolkit=11.3
+  - mkl==2024.0.0
+  - numba
+  - numpy
+  - pandas
+  - pip
+  - scipy
+  - tqdm
+  - h5py
+  - wandb
+  - omegaconf
+  - hydra-core
+  - fire
+  - tabulate
+  - torch-scatter
+  - pypng
+  - imageio
+  - pip:
+    - open3d==0.17.0
+    - dztimer
+    - av2==0.2.1
+
+
