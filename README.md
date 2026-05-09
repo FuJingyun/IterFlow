@@ -1,6 +1,6 @@
 # IterFlow
 Source Code for ICML 2026 paper: "Weakly Supervised Cross-Modal Learning for 4D Radar Scene Flow Estimation". 
-![](image/overall.png)
+![](overall.png)
 
 ## 0. Setup
 **Environment**: Clone the repo and build the environment. We use conda to manage the environment.
