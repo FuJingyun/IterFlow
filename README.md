@@ -42,7 +42,7 @@ PATH_TO_VOD_DATASET
     │   │── calib
     │       ├──00001.txt
     │       ...
-    ├── radar_5frames
+    ├── radar
     │   │── training
     │       ├── velodyne
     │           ├── 00001.bin
@@ -50,9 +50,6 @@ PATH_TO_VOD_DATASET
     │   │── calib
     │       ├──00001.txt
     │       ...
-    ├── seg_ground_5frames
-    │   │── training
-    │       ├──00001.txt
 ```
 
 ### B. Generate VoD Scene Flow Dataset in .h5 format
