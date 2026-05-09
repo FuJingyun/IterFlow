@@ -64,7 +64,8 @@ python gen_ra_gt_flow.py.py
 
 ### C. Generate 2D Tracking boxes for VoD sequences with YOLOv11 model
 
-we adopt the deepsort 2D tracking algorithm from [YOLOv11-DeepSort](https://github.com/Sharpiless/YOLOv11-DeepSort/tree/main)
+we adopt the deepsort 2D tracking algorithm from [YOLOv11-DeepSort](https://github.com/Sharpiless/YOLOv11-DeepSort/tree/main).
+
 And we use the official pretrained Yolov11L model weight:
 [Yolov11-L](https://pan.baidu.com/s/13m_R_lYVWGHoGNYHEzAeHw?pwd=uvnh)
 
