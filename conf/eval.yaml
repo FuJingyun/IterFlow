@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+  - hydra: default
+  - model: IterFlow   
+
+dataset_path:  # TO DO :  path to VoD h5 dataset
+
+model_name: IterFlow 
+checkpoint: ./weight/best_IterFlow.ckpt # TO DO :  path to best_IterFlow.ckpt
+save_path: # TO DO path to SAVE results
+
+av2_mode: val # [val, test]
+dataset_name: VOD    
+estimate_sf: only_radar 
+vod_mode: radar_only  
+save_res: False 
+
+slurm_id: 00000
+output: ${model.name}-${slurm_id}
+gpus: '0'
+available_gpus: [0] 
+num_workers: 8
+seed: 42069
+eval_only: True
+wandb_mode: offline # [offline, disabled, online]
+
+point_cloud_range: [0, -25.6, -3, 51.2, 25.6, 3]
+voxel_size: [0.1, 0.1, 6]
+
+variation: 1
+num_frames: 2
+
+is_freeze: False
+dynamic_mask: False 
+dynamic_seg: False

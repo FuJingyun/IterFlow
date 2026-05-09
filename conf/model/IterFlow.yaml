@@ -1,0 +1,6 @@
+name: IterFlow
+
+target:
+  _target_: scripts.network.models.IterFlow.IterFlow  
+  
+val_monitor: Radar val/ALL_EPE3D        

@@ -1,0 +1,57 @@
+defaults:
+  - _self_
+  - hydra: default
+  - model: IterFlow   
+  
+slurm_id: 00000
+
+wandb_mode: offline # [offline, disabled, online]
+wandb_project_name: IterFlow 
+dataset_path:      # TO DO :  path to VoD h5 dataset
+
+dataset_name: VOD 
+estimate_sf: only_radar 
+vod_mode: radar_only 
+eval_only: False
+
+output: ${model.name}-${slurm_id}
+
+model_name: IterFlow 
+checkpoint: 
+# For continue training
+pretrained_weights: 
+
+# trainer
+available_gpus:  [0, 1, 2, 3]  
+gpus: '0, 1, 2, 3' 
+
+num_workers: 16
+sync_bn: true
+batch_size: 8 
+epochs: 150
+gradient_clip_val: 5.0
+my_model_save_path: # TO DO path to SAVE ckpt
+
+version: 2026
+
+# optimizer ==> Adam
+vr_thres: 0.3 
+stat_thres: 0.5 
+lr: 0.001
+decay_epochs: 1
+decay_rate: 0.9
+
+# log settings
+seed: 42069
+log_every: 10 
+val_every: 1  # epoch
+save_top_model: 3 # top_k model will be saved.
+
+# -----> Model and Task Parameters
+voxel_size: [0.1, 0.1, 6] # X Y Z
+point_cloud_range: [0, -25.6, -3, 51.2, 25.6, 3]
+variation: 1
+num_frames: 2  # max to 5
+
+is_freeze: False 
+dynamic_mask: False
