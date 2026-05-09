@@ -3,7 +3,8 @@ Source Code for ICML 2026 paper: "Weakly Supervised Cross-Modal Learning for 4D 
 ![](overall.png)
 
 ## 0. Setup
-**Environment**: Clone the repo and build the environment. We use conda to manage the environment.
+**Environment**: Clone the repo and build the environment. 
+Recommend to use conda to manage the environment.
 check [detail installation](https://github.com/KTH-RPL/OpenSceneFlow/assets/README.md) for more information. 
 
 ```bash
