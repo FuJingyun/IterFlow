@@ -1,4 +1,5 @@
-Source Code for ICML 2026 paper: 
+Source Code for ICML 2026 paper
+[Paper Link](https://arxiv.org/abs/2605.18507): 
 # "Weakly Supervised Cross-Modal Learning for 4D Radar Scene Flow Estimation". 
 ![](overall.png)
 
